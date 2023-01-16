@@ -58,24 +58,23 @@ class login extends CI_Controller {
                     redirect('/');
             }
         }
-
-        private function _updateLastLogin($userid){
-            $sql = "UPDATE tb_user SET last_login=now() WHERE id=$userid";
-            $this->db->query($sql);
-        }
-        public function logout()
-        {
-            //hancurkan semua sesi
-            $this->session->sess_destroy();
-            redirect(site_url('login'));
-        }
-        public function block()
-        {
-            $data = array(
-                'user' => infoLogin(),
-                'title'=> 'Access Denied!'
-            );
-            $this->load->view('login/error404', $data);
-        }
+    }
+    private function _updateLastLogin($userid){
+        $sql = "UPDATE tb_user SET last_login=now() WHERE id=$userid";
+        $this->db->query($sql);
+    }
+    public function logout()
+    {
+        //hancurkan semua sesi
+        $this->session->sess_destroy();
+        redirect(site_url('login'));
+    }
+    public function block()
+    {
+        $data = array(
+            'user' => infoLogin(),
+            'title'=> 'Access Denied!'
+        );
+        $this->load->view('login/error404', $data);
     }
 }
