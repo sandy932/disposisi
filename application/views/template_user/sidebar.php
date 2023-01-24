@@ -16,10 +16,8 @@
                             </a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="<?php echo site_url('admin/user') ?>">Data User</a>
-                                    <a class="nav-link" href="<?php echo site_url('admin/surat_masuk') ?>">Surat Masuk</a>
-                                    <a class="nav-link" href="<?php echo site_url('admin/surat_masuk') ?>">Surat Keluar</a>
-                                    <a class="nav-link" href="<?php echo site_url('admin/surat_masuk') ?>">Disposisi</a>
+                                    <a class="nav-link" href="<?php echo site_url('surat_ajuan') ?>">Surat</a>
+                                    <a class="nav-link" href="<?php echo site_url('templatesurat') ?>">Template Surat</a>
                                 </nav>
                             </div>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">

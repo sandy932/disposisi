@@ -1,7 +1,7 @@
 <?php
-$this->load->view('admin/template/header');
-$this->load->view('admin/template/navbar');
-$this->load->view('admin/template/sidebar');
+$this->load->view('template_user/header');
+$this->load->view('template_user/navbar');
+$this->load->view('template_user/sidebar');
 $this->load->view($content);
-$this->load->view('admin/template/footer');
+$this->load->view('template_user/footer');
 ?>
